@@ -65,13 +65,13 @@ class Evaluate:
     """
     # Write your code here
     nums = 0
-    b = 0
+    ops = 0
     for element in expression:
       if element.isnumeric():
-        a = a + 1
+        nums = nums + 1
       else:
-        b = b + 1
-    if b == a - 1:
+        ops = ops + 1
+    if ops == nums - 1:
       return True
     else:
       return False
