@@ -7,7 +7,6 @@ class Evaluate:
   """
     # Write your code here
 
-
   def __init__(self, size):
     """Inits Evaluate with top, size_of_stack and stack.
     Arguments:
@@ -64,14 +63,14 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
-    nums = 0
-    ops = 0
+    a = 0
+    b = 0
     for element in expression:
       if element.isnumeric():
-        nums = nums + 1
+        a = a + 1
       else:
-        ops = ops + 1
-    if ops == nums - 1:
+        b = b + 1
+    if b == a - 1:
       return True
     else:
       return False
